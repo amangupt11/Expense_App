@@ -12,4 +12,4 @@ export const handleError = (msg) => {
     })
 }
 
-export const APIUrl = 'http://localhost:8080';
+export const APIUrl = 'https://expense-app-aman.onrender.com';

@@ -17,9 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const _dirname = path.resolve();
 
-app.get('/ping', (req, res) => {
-    res.send('PONG');
-});
+
 
 // Middleware
 app.use(express.json());
@@ -28,7 +26,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://expense-app-aman.onrender.com',
     credentials: true,
 }));
 
